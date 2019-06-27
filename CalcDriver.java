@@ -12,9 +12,9 @@ public class CalcDriver {
 			if (Character.toString(option).matches("[-+*/]")) { // checks user input if its a -+*/. If not loops around
 																// and tells user invalid.
 				System.out.println("Enter First Number: ");
-				double x = sc.nextInt(); // int number
+				double x = sc.nextDouble(); // take double number
 				System.out.println("Enter Second Number: ");
-				double y = sc.nextInt(); // int number
+				double y = sc.nextDouble(); // take double number
 				switch (option) {
 				case '+':
 					System.out.println(calculator.sum(x, y)); // Add
